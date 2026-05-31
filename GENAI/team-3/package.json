@@ -1,0 +1,13 @@
+{
+  "name": "office-supply-management",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "seed": "npm run seed --prefix server"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

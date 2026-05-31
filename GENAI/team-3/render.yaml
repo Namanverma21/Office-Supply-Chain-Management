@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: office-supply-management
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: DB_PATH
+        value: /opt/render/project/src/data/office_supply.db
+    disk:
+      name: office-supply-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
