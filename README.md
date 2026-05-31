@@ -1,129 +1,228 @@
-# 🚀 Office Supply Management System
+# 🤖 AI-Powered Office Supply Chain Management System
 
-A modern full-stack web application that streamlines office inventory management and supply request workflows with secure role-based access control.
+> A full-stack Office Supply Management Platform built using a **fully Agentic AI development workflow**.
+> Instead of manually coding every feature, specialized AI agents collaborated to design, implement, test, document, and deploy the application.
 
----
-
-## 📌 Overview
-
-Managing office supplies manually can be time-consuming and error-prone. This system provides a centralized platform where employees can request office supplies and administrators can manage inventory, approve requests, and track usage efficiently.
-
----
-
-## ✨ Key Features
-
-### 👨‍💼 Admin Dashboard
-
-* View and manage office inventory
-* Approve or reject employee requests
-* Track all request activities
-* Monitor stock availability
-* Add rejection reasons when declining requests
-
-### 👩‍💻 Employee Dashboard
-
-* Submit office supply requests
-* Specify item, quantity, and remarks
-* Track request status in real-time
-* View personal request history
-
-### 🔄 Smart Inventory Management
-
-* Automatic stock deduction on approval
-* Request status tracking
-* Complete request audit history
-* Secure authentication and authorization
+![License](https://img.shields.io/badge/license-MIT-blue)
+![React](https://img.shields.io/badge/React-18-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green)
+![SQLite](https://img.shields.io/badge/Database-SQLite-orange)
+![JWT](https://img.shields.io/badge/Auth-JWT-red)
 
 ---
 
-## 🛠️ Tech Stack
+# 🚀 What Makes This Project Unique?
 
-| Layer             | Technology                   |
-| ----------------- | ---------------------------- |
-| Frontend          | React 18, React Router, Vite |
-| Backend           | Node.js, Express.js          |
-| Database          | SQLite (sql.js)              |
-| Authentication    | JWT, bcryptjs                |
-| State Management  | React Context API            |
-| API Communication | REST APIs                    |
+This is not just an Office Supply Management System.
+
+This project demonstrates how a **multi-agent AI software engineering team** can collaboratively build a production-ready application.
+
+Instead of relying on a single AI assistant, the system uses specialized agents with clearly defined responsibilities.
+
+Each agent contributes like a real software team member:
+
+* 🧠 Solution Architect
+* 👨‍💻 Senior Developer
+* 🧪 Unit Test Engineer
+* 🔄 E2E Test Engineer
+* 📚 Technical Writer
+* ⚙️ GitHub Manager
+* 🎯 Project Orchestrator
+
+The **Project Orchestrator Agent** coordinates all other agents and combines their outputs into a complete software solution.
 
 ---
 
-## 📷 Application Workflow
+# 🏢 Application Overview
+
+The Office Supply Management System helps organizations manage office inventory and employee supply requests through a secure role-based platform.
+
+Employees can request supplies while administrators review, approve, reject, and manage inventory.
+
+---
+
+# ✨ Features
+
+## 👨‍💼 Admin Features
+
+* View complete inventory
+* Approve employee requests
+* Reject requests with reasons
+* Track request history
+* Monitor stock levels
+* Manage inventory records
+
+## 👩‍💻 Employee Features
+
+* Submit supply requests
+* Specify quantity and remarks
+* View request status
+* Track request history
+* Monitor approval progress
+
+## 📦 Inventory Features
+
+* Automatic stock deduction
+* Inventory synchronization
+* Request auditing
+* History tracking
+* Real-time status updates
+
+---
+
+# 🔐 Authentication & Security
+
+* JWT Authentication
+* Role-Based Authorization
+* Protected Routes
+* Password Hashing (bcryptjs)
+* Secure API Access
+
+---
+
+# 🛠️ Tech Stack
+
+| Layer            | Technology      |
+| ---------------- | --------------- |
+| Frontend         | React 18        |
+| Build Tool       | Vite            |
+| Routing          | React Router    |
+| Backend          | Node.js         |
+| Framework        | Express.js      |
+| Database         | SQLite (sql.js) |
+| Authentication   | JWT + bcryptjs  |
+| State Management | Context API     |
+
+---
+
+# 🧠 Agent Architecture
 
 ```text
-Employee Login
-       │
-       ▼
-Submit Request
-       │
-       ▼
-Admin Reviews Request
-   ┌──────────────┐
-   │ Approve      │
-   │ Reject       │
-   └──────────────┘
-       │
-       ▼
-Inventory Updated
-       │
-       ▼
-Request History Recorded
+                    ┌──────────────────────┐
+                    │ Project Orchestrator │
+                    └──────────┬───────────┘
+                               │
+         ┌─────────────────────┼─────────────────────┐
+         │                     │                     │
+         ▼                     ▼                     ▼
+
+┌────────────────┐   ┌────────────────┐   ┌────────────────┐
+│ Solution       │   │ Senior         │   │ GitHub         │
+│ Architect      │   │ Developer      │   │ Manager        │
+└────────────────┘   └────────────────┘   └────────────────┘
+
+         ▼                     ▼                     ▼
+
+┌────────────────┐   ┌────────────────┐   ┌────────────────┐
+│ Unit Test      │   │ E2E Test       │   │ Documenter     │
+│ Writer         │   │ Writer         │   │ Agent          │
+└────────────────┘   └────────────────┘   └────────────────┘
 ```
 
 ---
 
-## 🔐 User Roles
+# 🤖 AI Agents
 
-| Role     | Access                                                  |
-| -------- | ------------------------------------------------------- |
-| Admin    | Inventory Management, Request Approval, Request History |
-| Employee | Submit Requests, Track Status, View Personal History    |
+| Agent                | Responsibility                          |
+| -------------------- | --------------------------------------- |
+| Project Orchestrator | Coordinates all agents and workflows    |
+| Solution Architect   | System design, APIs, database planning  |
+| Senior Developer     | Feature implementation and code quality |
+| Unit Test Writer     | Unit testing and coverage               |
+| E2E Test Writer      | End-to-end flow validation              |
+| GitHub Manager       | CI/CD and repository automation         |
+| Documenter           | Technical documentation and onboarding  |
 
 ---
 
-## 🚀 Quick Start
+# 📂 Project Structure
 
-### 1️⃣ Clone Repository
-
-```bash
-git clone <repository-url>
-cd office-supply-management-system
+```text
+.
+├── .github
+│   └── agents
+│       ├── project-orchestrator.agent.md
+│       ├── solution-architect.agent.md
+│       ├── senior-developer.agent.md
+│       ├── unit-test-writer.agent.md
+│       ├── e2e-test-writer.agent.md
+│       ├── github-manager.agent.md
+│       └── documenter.agent.md
+│
+├── client
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── App.jsx
+│   │   ├── api.js
+│   │   └── AuthContext.jsx
+│
+├── server
+│   ├── routes
+│   │   ├── auth.js
+│   │   ├── inventory.js
+│   │   └── requests.js
+│   │
+│   ├── database.js
+│   ├── middleware.js
+│   └── server.js
+│
+└── README.md
 ```
 
-### 2️⃣ Install Dependencies
+---
+
+# 🚀 Quick Start
+
+## Install Dependencies
+
+```bash
+cd server && npm install
+
+cd ../client && npm install
+```
+
+## Seed Database
 
 ```bash
 cd server
-npm install
 
-cd ../client
-npm install
-```
-
-### 3️⃣ Seed Database
-
-```bash
-cd server
 npm run seed
 ```
 
-### 4️⃣ Start Backend
+---
+
+# 👤 Demo Accounts
+
+| Username | Password | Role     |
+| -------- | -------- | -------- |
+| admin    | admin123 | Admin    |
+| john     | john123  | Employee |
+| jane     | jane123  | Employee |
+
+---
+
+# ▶️ Run Backend
 
 ```bash
+cd server
+
 npm start
 ```
 
-Server runs on:
+Backend runs on:
 
 ```text
 http://localhost:5000
 ```
 
-### 5️⃣ Start Frontend
+---
+
+# ▶️ Run Frontend
 
 ```bash
 cd client
+
 npm run dev
 ```
 
@@ -135,125 +234,86 @@ http://localhost:3000
 
 ---
 
-## 🔑 Demo Credentials
-
-| Username | Password | Role     |
-| -------- | -------- | -------- |
-| admin    | admin123 | Admin    |
-| john     | john123  | Employee |
-| jane     | jane123  | Employee |
-
----
-
-## 📂 Project Structure
+# 🔄 Workflow
 
 ```text
-office-supply-management-system
-│
-├── server
-│   ├── server.js
-│   ├── database.js
-│   ├── middleware.js
-│   ├── seed.js
-│   │
-│   └── routes
-│       ├── auth.js
-│       ├── inventory.js
-│       └── requests.js
-│
-├── client
-│   └── src
-│       ├── App.jsx
-│       ├── api.js
-│       ├── AuthContext.jsx
-│       │
-│       ├── components
-│       │   └── Navbar.jsx
-│       │
-│       └── pages
-│           ├── Login.jsx
-│           ├── AdminDashboard.jsx
-│           ├── EmployeeDashboard.jsx
-│           ├── Inventory.jsx
-│           └── RequestHistory.jsx
-│
-└── README.md
+Employee Login
+      │
+      ▼
+Create Request
+      │
+      ▼
+Pending Review
+      │
+      ▼
+Admin Decision
+ ┌───────────────┐
+ │ Approve       │
+ │ Reject        │
+ └───────────────┘
+      │
+      ▼
+Inventory Updated
+      │
+      ▼
+History Recorded
 ```
 
 ---
 
-## 🌐 Deployment
+# 🌐 Deployment
 
-The application can be deployed as a single Node.js service.
-
-### Build Application
+Build and deploy as a single Node service:
 
 ```bash
 npm install
+
 npm run build
-```
 
-### Start Production Server
-
-```bash
 npm start
 ```
 
-### Environment Support
+Supports:
 
-```env
-DB_PATH=/path/to/database.db
-JWT_SECRET=your-secret-key
-PORT=5000
-```
-
----
-
-## 🎯 Core Business Logic
-
-### Request Approval Flow
-
-1. Employee submits a request.
-2. Request remains in **Pending** state.
-3. Admin reviews the request.
-4. Admin either:
-
-   * Approves request
-   * Rejects request with reason
-5. Approved requests automatically update inventory.
-6. Complete history is stored for auditing.
+* Render
+* Railway
+* VPS
+* Docker
+* Azure
+* AWS
 
 ---
 
-## 🔒 Security Features
+# 🎯 Why This Project Matters
 
-* JWT Authentication
-* Password Hashing using bcryptjs
-* Protected Routes
-* Role-Based Authorization
-* Secure API Access
+This project showcases:
 
----
+✅ Full Stack Development
 
-## 📈 Future Enhancements
+✅ Agentic AI Architecture
 
-* Email Notifications
-* Request Analytics Dashboard
-* Inventory Forecasting
-* Export Reports to Excel/PDF
-* Multi-Department Support
-* Low Stock Alerts
+✅ Multi-Agent Collaboration
 
----
+✅ Modern React + Node.js Development
 
-## 👨‍💻 Author
+✅ Secure Authentication
 
-**Naman Verma**
+✅ Software Engineering Workflows
 
-Software Development Engineer | Full Stack Developer
-
-GitHub: https://github.com/NamanVerma21
+✅ AI-Assisted Development Lifecycle
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+# 👨‍💻 Author
+
+### Naman Verma
+
+Software Development Engineer
+
+🔗 GitHub: https://github.com/NamanVerma21
+
+---
+
+## ⭐ If you found this project interesting, don't forget to star the repository!
+
+**Built with React, Node.js, and an AI Engineering Team of Specialized Agents.**
